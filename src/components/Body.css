@@ -1,0 +1,90 @@
+.Popular-destination {
+  margin: 4rem 6rem;
+  position: relative;
+  bottom: 120px;
+}
+.Popular-destination h1 {
+  font-size: 3rem;
+}
+.new h1 {
+  font-size: 3rem;
+  position: relative;
+  top: 8px;
+}
+.First-Destination {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 4.5rem;
+}
+.Second-Destination {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  margin-top: 4.5rem;
+}
+
+.Destination-description {
+  width: 45%;
+  text-align: start;
+  font-size: 1.1rem;
+}
+
+.Destination-description h2 {
+  padding-bottom: 1rem;
+}
+.destination-img {
+  position: relative;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  z-index: -99;
+}
+.destination-img img {
+  width: 49%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 6px;
+  box-shadow: -1px 1px 62px -18px black;
+}
+
+.destination-img img:nth-child(2) {
+  position: absolute;
+  top: -10%;
+  right: 0;
+}
+.Slider {
+  position: relative;
+  top: 80px;
+}
+.card {
+  width: 18rem;
+}
+@media screen and (max-width: 850px) {
+  .Popular-destination {
+    margin: 4rem 2rem;
+  }
+  .First-Destination {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 2.5rem;
+  }
+  .Second-Destination {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 4.5rem;
+  }
+
+  .Destination-description {
+    width: 100%;
+  }
+
+  .destination-img {
+    width: 100%;
+    margin: 1.8rem 0;
+  }
+  .destination-img img {
+    height: 250px;
+  }
+}
